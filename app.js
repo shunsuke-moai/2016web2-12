@@ -10,11 +10,6 @@ var users = require('./routes/users');
 
 var app = express();
 
-var password='29290831';
-var crypt=require('crypto');
-var decipher=crypto.createDecipher('aes192',password);
-decipher.update('','hex','utf8');
-var dec=decipher.final('utf8');
 
 var vasicAuth = require('basic-auth-connect');
 app.use(basicAuth('user','pass');
