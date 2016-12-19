@@ -12,7 +12,7 @@ var app = express();
 
 
 var basicAuth = require('basic-auth-connect');
-app.use(basicAuth('user','pass');
+app.use(basicAuth('user','pass'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
